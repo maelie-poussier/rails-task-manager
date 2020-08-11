@@ -1,0 +1,10 @@
+
+<div class="form col-lg-6">
+  <%= simple_form_for(@task) do |f| %>
+      <div ><%= f.input :title %></div>
+      <div><%= f.input :details %></div>
+      <%= f.input :completed %>
+    <div class="btn btn-primary"><%= f.submit :class => "btn"%></div>
+  <% end %>
+</div>
+
